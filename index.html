@@ -55,11 +55,15 @@
         </div>
        <div class="about-image">
     <div class="spinning-border">
-        <video class="about-img" autoplay muted loop playsinline poster="placeholder-about.jpg" id="aboutVideo">
-            <source src="about-video.mp4" type="video/mp4">
-            <source src="about-video.webm" type="video/webm">
-        </video>
-</div>
+        <iframe 
+            class="about-img"
+            width="315" 
+            height="560" 
+            src="https://www.youtube.com/embed/QNX2_ekLyEg?autoplay=1&mute=1&loop=1&playlist=QNX2_ekLyEg" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
             <div class="about-text">
                 <h3>Hello, I'm Vj Nemo Nicolas</h3>
                 <p>A Reliable Graphics Designer and developer from the City of Calamba. I specialize in creating unique digital experiences with a pixel-perfect approach.</p>
@@ -231,18 +235,6 @@
     <footer class="footer">
         <p>&copy; 2025 Nicolas | PIXELCRAFT Portfolio | 3IT-3 CEEL</p>
     </footer>
-    <script>
-    const video = document.getElementById('aboutVideo');
-    const container = document.querySelector('.spinning-border');
-    
-    container.addEventListener('mouseenter', () => {
-        video.muted = false;
-        video.play();
-    });
-    
-    container.addEventListener('mouseleave', () => {
-        video.muted = true;
-    });
-</script>
 </body>
+
 </html>
